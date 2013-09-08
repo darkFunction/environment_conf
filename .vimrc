@@ -106,3 +106,6 @@ nnoremap <silent> ` :Errors<CR>
 " Tell it to use clang instead of gcc
 let g:syntastic_objc_checker='clang'
 
+" Spelling corrections
+iabbrev sefl self
+
