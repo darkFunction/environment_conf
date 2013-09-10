@@ -32,26 +32,27 @@ colorscheme molokai
 set t_Co=256
 let g:airline_theme='wombat'
 
-set ignorecase          " case insenstive search
-set nobackup            " no annoying ~ files
-set hlsearch            " highlight search results
-set autochdir           " auto switch to file's working directory
-set history=50          " keep 50 lines of command line history
-set ruler               " show the cursor position all the time
-set showcmd             " display incomplete commands
-set ts=4                " tab stop
-set incsearch           " do incremental searching
-set autoindent          " always set autoindenting on
-set cursorline          " for crosshair (doesn't play well with clang complete)
-set cursorcolumn        " for crosshair 
-set formatoptions=l     " don't autoformat long lines
-set lbr                 " wrap long lines at a space
-set scrolloff=10        " stay 10 lines from edge when scrolling
-set bs=indent,eol,start " backspace over everything in insert mode
-set number              " line numbers on
-set laststatus=2 	    " Always show status line
-set timeoutlen=1000     " timeout for user escape sequences
-set ttimeoutlen=10		" timeout for system escape sequences
+set ignorecase           " case insenstive search
+set hlsearch             " highlight search results
+set autochdir            " auto switch to file's working directory
+set history=50           " keep 50 lines of command line history
+set ruler                " show the cursor position all the time
+set showcmd              " display incomplete commands
+set ts=4                 " tab stop
+set incsearch            " do incremental searching
+set autoindent           " always set autoindenting on
+set cursorline           " for crosshair (doesn't play well with clang complete)
+set cursorcolumn         " for crosshair 
+set formatoptions=l      " don't autoformat long lines
+set lbr                  " wrap long lines at a space
+set scrolloff=10         " stay 10 lines from edge when scrolling
+set bs=indent,eol,start  " backspace over everything in insert mode
+set number               " line numbers on
+set laststatus=2 	     " Always show status line
+set timeoutlen=1000      " timeout for user escape sequences
+set ttimeoutlen=10		 " timeout for system escape sequences
+set backupdir=~/vimtmp,. " backup directories
+set directory=~/vimtmp,. " backup directories
 
 "switch between .mm/m  and .h
 map <C-Tab> :A<cr>
