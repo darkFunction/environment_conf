@@ -53,6 +53,7 @@ set timeoutlen=1000      " timeout for user escape sequences
 set ttimeoutlen=10		 " timeout for system escape sequences
 set backupdir=~/vimtmp,. " backup directories
 set directory=~/vimtmp,. " backup directories
+set relativenumber	     " relative line numbers
 
 "switch between .mm/m  and .h
 map <C-Tab> :A<cr>
@@ -60,15 +61,21 @@ map <C-Tab> :A<cr>
 "syntax highlight .template as .xml
 au BufNewFile,BufRead *.template set filetype=xml
 
-" change search/replace case sensitivity with f2
 nmap <F2> :set ignorecase! ignorecase? <CR>
-" wrapping shortcut
 nmap <F3> :set wrap! wrap? <CR>
+nmap <F4> :set relativenumber! relativenumber? <CR>
 
 " Cursor crosshair, switch with \c
 hi CursorLine   cterm=NONE ctermbg=232
 hi CursorColumn cterm=NONE ctermbg=232
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+" Convert all tabs in file to spaces (and remain in that mode)
+command! Tts :call TabsToSpaces()
+function! TabsToSpaces()
+     :set expandtab 
+     :retab 
+endfunction
 
 " Adds a #include (or #import) directive
 " :Import Something.h
