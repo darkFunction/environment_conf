@@ -53,7 +53,7 @@ set timeoutlen=1000      " timeout for user escape sequences
 set ttimeoutlen=10		 " timeout for system escape sequences
 set backupdir=~/vimtmp,. " backup directories
 set directory=~/vimtmp,. " backup directories
-set relativenumber	     " relative line numbers
+"set relativenumber	     " relative line numbers
 
 "switch between .mm/m  and .h
 map <C-Tab> :A<cr>
