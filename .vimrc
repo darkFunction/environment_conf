@@ -60,6 +60,8 @@ map <C-Tab> :A<cr>
 
 "syntax highlight .template as .xml
 au BufNewFile,BufRead *.template set filetype=xml
+"syntax highlight .podspec as ruby
+au BufNewFile,BufRead *.podspec set filetype=ruby shiftwidth=2 foldmethod=indent foldlevel=1
 
 nmap <F2> :set ignorecase! ignorecase? <CR>
 nmap <F3> :set wrap! wrap? <CR>
