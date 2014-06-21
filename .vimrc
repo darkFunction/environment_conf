@@ -4,27 +4,28 @@ set nocompatible               " be iMproved
 """ START VUNDLE CONF """
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'terhechte/syntastic'
-Bundle 'eraserhd/vim-ios.git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'kien/ctrlp.vim'
-Bundle 'cocoa.vim'
-Bundle 'clang-complete'
-Bundle 'tomasr/molokai'
-Bundle 'guns/ultisnips'
-Bundle "b4winckler/vim-objc"
-Bundle "bling/vim-airline"
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'terhechte/syntastic'
+Plugin 'eraserhd/vim-ios.git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
+Plugin 'cocoa.vim'
+Plugin 'clang-complete'
+Plugin 'tomasr/molokai'
+Plugin 'guns/ultisnips'
+Plugin 'b4winckler/vim-objc'
+Plugin 'bling/vim-airline'
 
-filetype plugin indent on     " required!
+call vundle#end()            " required
+filetype plugin indent on    " required
 """ END VUNDLE CONF """
 
 syntax enable
