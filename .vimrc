@@ -23,6 +23,7 @@ Plugin 'tomasr/molokai'
 Plugin 'guns/ultisnips'
 Plugin 'b4winckler/vim-objc'
 Plugin 'bling/vim-airline'
+Plugin 'leafo/moonscript-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
