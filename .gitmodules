@@ -1,0 +1,3 @@
+[submodule "sam-pack/lib/evil"]
+	path = sam-pack/lib/evil
+	url = git://gitorious.org/evil/evil.git
