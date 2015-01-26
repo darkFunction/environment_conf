@@ -19,6 +19,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'cocoa.vim'
 Plugin 'clang-complete'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomasr/molokai'
 Plugin 'guns/ultisnips'
 Plugin 'b4winckler/vim-objc'
@@ -57,6 +58,7 @@ set ttimeoutlen=10		 " timeout for system escape sequences
 set backupdir=~/vimtmp,. " backup directories
 set directory=~/vimtmp,. " backup directories
 "set relativenumber	     " relative line numbers
+set paste			     " because why would you want to paste commands
 
 "switch between .mm/m  and .h
 map <C-Tab> :A<cr>
@@ -64,7 +66,7 @@ map <C-Tab> :A<cr>
 "syntax highlight .template as .xml
 au BufNewFile,BufRead *.template set filetype=xml
 "syntax highlight .podspec as ruby
-au BufNewFile,BufRead *.podspec set filetype=ruby shiftwidth=2 foldmethod=indent foldlevel=1
+au BufNewFile,BufRead *.podspec set filetype=ruby 
 "syntax highlight .md as markdown
 au BufRead,BufNewFile *.md set filetype=markdown
 
